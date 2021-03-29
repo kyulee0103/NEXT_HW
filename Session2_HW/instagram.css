@@ -1,0 +1,262 @@
+#container
+{
+    width:400px;
+    height: 750px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+
+}
+
+.top-box
+{
+    display: flex;
+
+}
+.top-box p
+{
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    padding:0 115px 0 115px;
+}
+
+.arrow
+{
+    padding: 0 10px 0 0;
+}
+.profile-img
+{
+    border-radius: 100%;
+    width: 100px;
+    height:100px;
+    position:absolute;
+    padding-left: 10px;
+}
+.introduction
+{
+    color: white;
+}
+.stories
+{
+    position:absolute;
+    padding: 25px 30px 5px 180px;
+}
+.followers
+{
+    position:absolute;
+    padding: 25px 50px 5px 250px;
+}
+.followings
+{
+    position:absolute;
+    padding: 25px 30px 5px 330px;
+    opacity: 0.5;
+}
+.name
+{
+    font-size: 11px;
+}
+.story
+{
+    position:absolute;
+    padding: 45px 30px 5px 184px;
+}
+.follower
+{
+    position:absolute;
+    padding: 45px 50px 5px 253px;
+}
+.following
+{
+    position:absolute;
+    padding: 45px 30px 5px 318px;
+}
+.self-introduction
+{
+    color:white;
+    font-size: 12px;
+    top: 85px;
+}
+
+.my-intro
+{
+    position: relative;
+    top:95px;
+    left:20px;
+}
+.same-followers
+{
+    position: relative;
+    top: 85px;
+    left:20px;
+}
+.follow-message
+{
+    color:white;
+    font-size: 12px;
+}
+.box1
+{
+    display:flex; 
+    border-radius: 5px;
+    width:145px;
+    height:20px;
+    border: 1px solid gray;
+    position: absolute;
+    opacity: 0.7;
+    top: 210px;
+    left: 40px;
+}
+.box2
+{
+    display:flex;
+    border-radius: 5px;
+    width:145px;
+    height:20px;
+    border: 1px solid gray;
+    position: absolute;
+    opacity:0.8;
+    top: 210px;
+    left: 190px;
+}
+.mini-box
+{
+    display:flex;
+    opacity:0.8;
+    border-radius: 5px;
+    width:20x;
+    height:20px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 210px;
+    left: 340px;
+
+}
+.follow
+{
+    color:white;
+    position: absolute;
+    top:201px;
+    left: 95px;
+}
+.follow-down
+{
+    position:absolute;
+    top:212px;
+    left:129px;
+
+}
+.message{
+    position:absolute;
+    top:201px;
+    left:250px;
+
+}
+.first-tap button
+{
+    position:absolute;
+    top:262px;
+    left:62px;
+    width:30px;
+    height:30px;
+    opacity:0;
+    z-index:2;
+}
+.first-tap img
+{
+
+    position:absolute;
+    top:265px;
+    left:65px;
+    z-index: 1;
+
+}
+.second-tap button
+{
+    position:absolute;
+    top:262px;
+    left:190px;
+    width:35px;
+    height:35px;
+    opacity:0;
+    z-index:2;
+}
+.second-tap img
+{
+
+    position:absolute;
+    top:265px;
+    left:195px;
+    opacity:0.7;
+    z-index: 1;
+
+}
+.last-tap button
+{
+    position:absolute;
+    top:260px;
+    left:328px;
+    width:30px;
+    height:30px;
+    opacity:0;
+    z-index:2;
+}
+.last-tap img
+{
+    position:absolute;
+    top:265px;
+    left:330px;
+    opacity:0.7;
+    z-index: 1;
+
+}
+
+.firstline-container
+{
+    display:flex;
+    position:absolute;
+    top:300px;
+    left:10px;
+    width:395px;
+    height:130px;
+    border:1px solid black;
+    justify-content: space-around;
+}
+.secondline-container
+{
+    display:flex;
+    position:absolute;
+    top:433px;
+    left:9px;
+    width:397px;
+    height:130px;
+    border:0.5px solid black;
+    justify-content: space-around;
+}
+.thirdline-container
+{
+    display:flex;
+    position:absolute;
+    top:567px;
+    left:9px;
+    width:397px;
+    height:130px;
+    border:0.5px solid black;
+    justify-content: space-around;
+}
+.footer
+{
+    display: flex;
+    width:395px;
+    position:absolute;
+    top:705px;
+    border: 1px solid;
+    justify-content: space-around;
+}
+.this-page img
+{
+    position: absolute;
+    top:250px;
+
+}
