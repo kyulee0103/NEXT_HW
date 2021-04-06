@@ -1,0 +1,46 @@
+body
+{
+    background-color: rgb(255, 226, 98);
+}
+.container
+{
+    margin-top: 30px;
+    background-color: rgb(216, 255, 194);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid  rgb(216, 255, 194);
+    box-shadow: 10px 5px 5px rgb(66, 66, 66);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.top
+{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+textarea
+{
+    border-radius: 10px;
+    background-color: rgb(255, 251, 199);
+    margin-top: -130px;
+    border: darkkhaki;
+}
+input
+{
+    border-radius: 10px;
+    background-color: rgb(169, 221, 255);   
+}
+
+
+h2
+{
+    font-family: 'Dosis', sans-serif;
+}
