@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <p class="main_home">MAIN HOME</p>
+    <section class="three_contents">
+        <a class="movie" href="{% url 'movie' %}">Movie ({{m}})</a><br>
+        <a class="drama" href="{% url 'drama' %}">Drama ({{d}})</a><br>
+        <a class="programming" href="{% url 'programming' %}">Programming ({{p}})</a>
+    </section>
+    <section>
+        <a class="new_post" href="{% url 'new' %}">New Post</a>
+    </section>
+</body>
+</html>
