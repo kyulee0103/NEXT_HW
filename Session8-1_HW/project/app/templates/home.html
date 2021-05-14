@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Nanum+Pen+Script&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type ="text/css" href = "{% static 'home.css' %}">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class = "container">
+        <div class = "title">
+            <h1>TO-DO-LIST</h1>
+        </div>
+        <div class = detail>
+            <ul>
+                {% for	post in	posts	%}
+                <li>
+                    <a href="{% url 'detail' post.pk %}">{{post.title}}</a>
+                    (deadline : {{post.deadline}})
+                </li>
+                {%	endfor %}
+            </ul>
+        </div>
+        <div class = bottom>
+        <a class = "new" href="{%	url 'new' %}"> Add Here! </a>
+        </div>
+    </div>
+
+</body>
+</html>

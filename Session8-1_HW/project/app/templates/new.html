@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type ="text/css" href = "{% static 'new_page.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,	initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "title">
+            <h1> What to Add?</h1>
+        </div>
+        <form action="" method="post">
+            {%	csrf_token %}
+            <div class="detail">
+                <div>
+                    <label class = "name" for="title">TITLE</label>
+                    <br>
+                    <input class = "box" type="text" id="title" name="title" placeholder="제목을 입력해주세요.">
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <label class = "name" for="content">DETAILS</label>
+                    <br>
+                    <textarea class = "box" name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <label class = "name" for="deadline">DEADLINE</label>
+                    <br>
+                    <input type="date" id="deadline" name="deadline">
+                </div>
+            </div>
+            <button class = "edit" type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

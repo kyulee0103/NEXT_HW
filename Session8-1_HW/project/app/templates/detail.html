@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type ="text/css" href = "{% static 'detail_page.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,	initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = container>
+        <div class = "title">
+            <h1> What to Do?</h1>
+        </div>
+        <div class=box>
+            <div>
+                <h2>TITLE</h2>
+                <p>{{	post.title }}</p>
+            </div>
+            <div>
+                <h2>CONTENTS</h2>
+                <p>{{ post.content }}</p>
+            </div>
+            <div>
+                <h2>DEADLINE</h2>
+                <p>{{post.deadline}}</p>
+            </div>
+        </div>
+        <div class = bar>
+            <a href="{%	url 'home'	%}">HOME</a>
+            <a href="{% url 'edit' post.pk %}">EDIT</a>
+            <a href="{% url 'delete' post.pk %}">DELETE</a>
+        </div>
+        <div class = comment>
+            <form method="POST">
+                {% csrf_token %}
+                <input class = "comment_box" type="text" name="content" placeholder= "ENTER YOUR COMMENTS">
+                <button type="submit">Comments</button>
+                
+            </form>
+            <br>
+
+            {% for comment in post.comments.all %}
+            <li>{{ comment.content }}
+                <a class= "delete" href = "{% url 'delete_comment' post.pk comment.pk %}">[DELETE]</a></li>
+            {% endfor %}
+        </div>
+
+    </div>
+
+</body>
+</html>
