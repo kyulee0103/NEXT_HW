@@ -1,0 +1,114 @@
+body 
+{
+    background-image: url('https://cdn.crowdpic.net/list-thumb/thumb_l_BD9725CBE59C9229B808928D5FEDA1EA.jpg');
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+
+.title
+{
+    margin-top: 0;
+    margin-left:0;
+    margin-right:0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50px;
+    background-color: rgb(87, 87, 87);
+    border:3px;
+    z-index: 3;
+    display: flex;
+    color:rgb(221, 221, 221);
+
+}
+h1
+{
+    margin-top: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container
+{
+    margin-top: 50px;
+    width:400px;
+    height:600px;
+    border: 0px solid rgb(255, 225, 54);
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 8px 5px 5px  rgb(63, 63, 63);
+    background-color: rgb(255, 245, 106);
+    z-index: 1;
+}
+
+.box
+{
+    font-size: 15px;;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    height: 280px;
+    border: 3px dashed rgb(100, 100, 100);
+    background-color: rgb(248, 246, 238);
+    text-decoration: none;
+    padding-left: 20px;
+}
+.box p
+{
+    margin: 5px;
+}
+.bar
+{
+    margin-top: 15px;
+    padding-bottom: 17px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-bottom: 3px dashed rgb(145, 145, 145);
+
+}
+a
+{
+    color: black;
+
+}
+
+.comment
+{
+    height:120px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 40px;
+    background-color: rgb(252, 251, 249);
+    margin-bottom: 0;
+    padding-bottom: 52px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.comment_box
+{
+    width: 220px;
+}
+
+.delete
+{
+    text-decoration-line: none;
+}
+
+.nav-bar 
+{
+    width: 100%;
+    background-color: #ffe343;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+.nav-item 
+{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+body 
+{
+    background-image: url('https://cdn.crowdpic.net/list-thumb/thumb_l_BD9725CBE59C9229B808928D5FEDA1EA.jpg');
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.container
+{
+    margin-top: 50px;
+    width:400px;
+    height:600px;
+    border: 0px solid gray;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 8px 5px 5px  rgb(63, 63, 63);
+    background-color: rgb(255, 245, 106);
+    z-index: 1;
+}
+.title
+{
+    margin-top: 0;
+    margin-left:0;
+    margin-right:0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50px;
+    background-color: rgb(87, 87, 87);
+    border:3px;
+    z-index: 3;
+    display: flex;
+    color:rgb(221, 221, 221);
+
+}
+h1
+{
+    margin-top: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.detail
+{
+    font-size: 15px;;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    height: 400px;
+    border: 3px dashed rgb(100, 100, 100);
+    background-color: rgb(248, 246, 238);
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.name
+{
+    font-size: 20px;
+}
+
+.edit
+{
+    margin-top: 20px;
+    margin-left: 180px;
+    text-align: center;
+
+}
+
+.box
+{
+    width: 250px;
+}

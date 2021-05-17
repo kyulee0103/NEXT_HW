@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type ="text/css" href = "{% static 'log.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class = "container">
+        <div class = "title">
+            <h1> Signup </h1>
+        </div>
+        <div class="bottom">
+        {% if error %}
+        <h3 style="color: red;">{{ error }}</h3>
+        {% endif %}
+        <form method = "POST">
+            {% csrf_token %}
+            <h2>ID</h2>
+            <input type="text" name="username" placeholder ="이름">
+            <br>
+            <h2>Password</h2>
+            <input type ="password" name ="password" placeholder = "비밀번호">
+            <br>
+            <br>
+            <button type = "submit">가입하기</button>
+
+        </form>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type ="text/css" href = "{% static 'mypage.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,	initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = container>
+        <div class = "title">
+            <h1> My Page</h1>
+        </div>
+        <div class = "nav-bar">
+            <a class = "nav-item" href ="{% url 'home' %}">HOME</a>
+            {% if user.is_authenticated %}
+            <a class = "nav-item">안녕하세요, {{ user.username }}님</a>
+            <a class = "nav-item" href = "{% url 'logout' %}">로그아웃</a>
+            {% else %}
+            <a claee = "nav-item" href = "{% url 'login' %}">로그인</a>
+            <a class = "nav-item" href = "{% url 'signup' %}">회원가입</a>
+            <a class = "nav-item">로그아웃</a>
+            {% endif %}
+        </div>  
+        <div class=box>
+            
+            <div>
+                <h2>My tasks</h2>
+                <ul>
+                    
+                    {% for post in mypost %}
+                    <li>
+                        
+                        <a href="{% url 'detail' post.pk %}">{{post.title}}</a>
+                        (deadline : {{post.deadline}})
+                    </li>
+                    {%	endfor %}
+                </ul>
+
+                <h2>My Comments</h2>
+                <ul>
+                    
+                    {% for comment in mycomment %}
+                    <li>
+                    <p>{{comment.content}}</p>
+                    </li>
+                    {%	endfor %}
+                </ul>
+
+            </div>
+        </div>
+        <div class = bar>
+            <a href="{%	url 'home'	%}">HOME</a>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
